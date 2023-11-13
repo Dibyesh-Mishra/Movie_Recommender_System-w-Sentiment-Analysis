@@ -35,7 +35,7 @@ function recommendcard(e){
 function load_details(my_api_key,title){
   $.ajax({
     type: 'GET',
-    url:'https://api.themoviedb.org/3/search/movie?api_key=782905df49a6590f7be75bee9064b46f'+my_api_key+'&query='+title,
+    url:'https://api.themoviedb.org/3/search/movie?api_key='+my_api_key+'&query='+title,
 
     success: function(movie){
       if(movie.results.length<1){
